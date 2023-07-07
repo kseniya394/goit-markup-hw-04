@@ -7,6 +7,7 @@
     --header-logo-span-color: #2e2f42;
     --footer-logo-span-color: #f4f4fd;
     --botton-border-color: #e7e9fc;
+    --tittle-color: #2e2f42;
 }
 
 /* Reset */
@@ -106,7 +107,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 text-decoration: none;
-color: #2E2F42;
+color: var(--tittle-color);
 display: block;
 padding: 24px 0;
 }
@@ -207,6 +208,14 @@ clip-path: inset(100%);
 clip: rect(0 0 0 0);
 overflow: hidden;
 }
+
+.solutions-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .solutions-list {
 display: flex;
 width: 1128px;
@@ -222,7 +231,7 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
-color: #2E2F42;
+color: var(--tittle-color);
 margin-bottom: 8px;
 }
 
@@ -248,7 +257,7 @@ text-align: center;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-color: #2E2F42;
+color: var(--tittle-color);
 margin-bottom: 72px;
 }
 .tasks-list {
@@ -276,7 +285,7 @@ text-align: center;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-color: #2E2F42;
+color: var(--tittle-color);
 margin-bottom: 72px;
 }
 .team-list {
@@ -301,7 +310,7 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
-color: #2E2F42;  
+color: var(--tittle-color);
 margin-bottom: 8px;
 }
 .team-list-text {
@@ -311,6 +320,50 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 text-align: center;
+}
+
+/* customers */
+
+.section-customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.customers-title {
+color: var(--tittle-color);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0.72px;
+padding-bottom: 72px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.clients-item {
+}
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    width: 168px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+}
+.clients-icon {
+    fill: #8E8F99;
+}
+.clients-link:hover {
+border-color: #404BBF;
+}
+
+.clients-link:hover .clients-icon {
+    fill: #404BBF;
 }
 
 .footer {
@@ -418,7 +471,7 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
-color: #2E2F42;
+color: var(--tittle-color);
 }
 .projects-list-text {
 font-weight: 400;
